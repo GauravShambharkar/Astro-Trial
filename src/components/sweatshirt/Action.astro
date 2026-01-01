@@ -1,0 +1,48 @@
+---
+---
+<section id="action" class="py-24 bg-stone-900 text-white">
+    <div class="max-w-4xl mx-auto px-6 text-center">
+        <h2 class="text-4xl md:text-5xl font-bold mb-6">Ready to upgrade your comfort?</h2>
+        <p class="text-stone-400 text-lg mb-12">Join thousands of others who have made the switch.</p>
+
+        <div class="bg-stone-800 p-8 rounded-3xl max-w-lg mx-auto border border-stone-700 shadow-2xl">
+            <div class="flex justify-between items-center mb-8 border-b border-stone-700 pb-4">
+                <span class="text-2xl font-bold">The Essential Sweatshirt</span>
+                <span class="text-2xl font-light text-orange-400">$85.00</span>
+            </div>
+
+            <div class="space-y-6 text-left">
+                <!-- Color Selection -->
+                <div>
+                    <label class="block text-sm text-stone-400 mb-2 uppercase tracking-wider">Color</label>
+                    <div class="flex gap-3">
+                        <button class="w-8 h-8 rounded-full bg-black border-2 border-white ring-2 ring-transparent ring-offset-2 ring-offset-stone-800 transition-all"></button>
+                         <button class="w-8 h-8 rounded-full bg-stone-500 border-2 border-transparent hover:border-white ring-2 ring-transparent ring-offset-2 ring-offset-stone-800 transition-all"></button>
+                         <button class="w-8 h-8 rounded-full bg-orange-900 border-2 border-transparent hover:border-white ring-2 ring-transparent ring-offset-2 ring-offset-stone-800 transition-all"></button>
+                    </div>
+                </div>
+
+                <!-- Size Selection -->
+                <div>
+                     <label class="block text-sm text-stone-400 mb-2 uppercase tracking-wider">Size</label>
+                     <div class="grid grid-cols-5 gap-2">
+                        {['XS', 'S', 'M', 'L', 'XL'].map((size) => (
+                             <button class="py-3 bg-stone-700 hover:bg-stone-600 rounded-lg text-sm font-medium transition-colors focus:bg-white focus:text-black">
+                                 {size}
+                             </button>
+                         ))}
+                     </div>
+                </div>
+
+                <button class="w-full bg-white text-black text-lg font-bold py-4 rounded-xl hover:bg-stone-200 transition-colors mt-8 flex items-center justify-center gap-2 group">
+                    Add to Cart
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 group-hover:translate-x-1 transition-transform" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3" />
+                    </svg>
+                </button>
+            </div>
+            
+            <p class="text-xs text-stone-500 mt-6 text-center">Free shipping on orders over $100. 30-day returns.</p>
+        </div>
+    </div>
+</section>

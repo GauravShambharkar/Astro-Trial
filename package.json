@@ -12,6 +12,7 @@
     "@astrojs/react": "^4.4.2",
     "@tailwindcss/vite": "^4.1.18",
     "astro": "^5.16.6",
+    "framer-motion": "^12.23.26",
     "tailwindcss": "^4.1.18"
   }
 }

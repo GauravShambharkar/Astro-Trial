@@ -1,5 +1,11 @@
 ---
 	import '../styles/global.css'
+
+	interface Props {
+		title?: string;
+	}
+
+	const { title } = Astro.props;
 ---
 
 <!doctype html>
@@ -9,7 +15,7 @@
 		<meta name="viewport" content="width=device-width" />
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 		<meta name="generator" content={Astro.generator} />
-		<title>Astro-Trail</title>
+		<title>{title}</title>
 	</head>
 	<body>
 		<nav id="navbar" class="fixed bg-black/20 mix-blend-difference backdrop-blur-2xl text-white top-0 w-full z-50 transition-all duration-300 border-b border-transparent">
@@ -40,8 +46,6 @@
 			<!-- Glass background only shown on scroll (handled by script) -->
 			<div id="navbar-bg" class="absolute inset-0 bg-white/80 backdrop-blur-md opacity-0 transition-opacity duration-300 -z-10"></div>
 		</nav>
-
-		
     	<slot />
 	</body>
 </html>
